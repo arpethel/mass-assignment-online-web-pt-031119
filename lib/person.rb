@@ -19,6 +19,7 @@ class Person
   # }
 
   def initialize(attributes)
+    # binding.pry
     # attributes is pulled from attr_accessor, not the hash 'attributes'
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
